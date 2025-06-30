@@ -223,6 +223,10 @@
     display: block; max-width: 350px;
   }
 
+  .kontak .conKontak p {
+    font-size: var(--text-3);
+  }
+
   .kontak .conKontak .kontakKiri {
     width: 100%;
   }
