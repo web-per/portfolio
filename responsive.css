@@ -1,0 +1,234 @@
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .wrapper :where(.swiper-button-prev, .swiper-button-next) {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .conProfil,
+  .content-keahlian,
+  .cvContent,
+  .cv .pend {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deskripsi,
+  .skill-bars,
+  .cvContent .kiri,
+  .cvContent .kanan,
+  .cv .pendKiri,
+  .cv .pendKanan {
+    width: 100%;
+  }
+
+  .cvContent {
+    width: 90%;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto 35px;
+  }
+
+  .context h2 {
+    font-size: 3rem;
+  }
+
+  .context p {
+    width: 90%;
+  }
+
+  .profil h1,
+  .keahlian h1,
+  .portfolio h1,
+  .cv h1 {
+    font-size: 2rem;
+  }
+
+  .profilTxt {
+    text-align: center;
+  }
+
+  .cvContent .kiri img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --text-1: 2rem;
+    --text-2: 1.5rem;
+    --text-3: 0.8rem;
+  }
+
+  .context .bannerImg {
+    width: 35%;
+    margin-bottom: 10%;
+  }
+
+  .context h1 {
+    font-size: var(--text-2);
+  }
+
+  .context h2 {
+    font-size: var(--text-1);
+    margin-bottom: 5%;
+  }
+
+  .context p {
+    font-size: var(--text-3);
+    line-height: 24px;
+    text-align: justify;
+    max-width: 300px;
+  }
+
+  .profil h1 {
+    font-size: var(--text-2);
+  }
+
+  .profilImg img {
+    width: 150px;
+  }
+
+  .profilTxt {
+    margin-top: -15%;
+    margin-bottom: 10%;
+    max-width: 300px;
+    text-align: justify;
+  }
+
+  .keahlian h1 {
+    font-size: var(--text-2);
+  }
+
+  .keahlian .deskripsi {
+    font-size: var(--text-3);
+    max-width: 300px;
+  }
+
+  .skill-bars {
+    max-width: 300px;
+  }
+
+  .skill-bars span {
+    font-size: var(--text-3);
+  }
+
+  .progress span {
+    font-size: 12px;
+    top: -20px;
+  }
+
+  .portfolio {
+    margin-top: 10%;
+  }
+
+  .card .card-content .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card .card-content .card-text {
+    font-size: 0.9rem;
+  }
+
+  .cv h1 {
+    font-size: var(--text-2);
+  }
+
+  .cvContent {
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  .cvContent .kiri img {
+    width: 60%;
+  }
+
+  .cvContent .kiri h1 {
+    text-align: center;
+  }
+
+  .cvContent p {
+    font-size: var(--text-3);
+  }
+
+  .cvContent .kanan h1 {
+    font-size: var(--text-2);
+    text-align: center;
+  }
+
+  .cvContent .kanan .proyek {
+    margin-top: 20%;
+  }
+
+  .cvContent .kanan .pengalaman {
+    margin-top: 20%;
+  }
+
+  .cvContent .kanan .pengalaman h1 {
+    margin-bottom: 5%;
+  }
+
+  .cvContent .kanan .pengalaman h3 {
+    text-align: left;
+  }
+
+  .cvContent .kanan .skill {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .cvContent .kanan .skills {
+    margin-top: 5%;
+  }
+
+  .cvContent .kanan .skill .skills {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .cvContent .skillsKiri {
+    width: 60%;
+  }
+
+  .cvContent .skillsKanan {
+    width: 40%;
+  }
+
+  .cvContent .kanan .skills h1 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .cvContent .kanan .pendidikan {
+    margin-top: 10%;
+  }
+
+  .cvContent .kanan .pendidikan h1 {
+    margin-bottom: 5%;
+  }
+
+  .kontak {
+    margin-top: 10%;
+  }
+
+  .kontak .conKontak {
+    display: block; max-width: 350px;
+  }
+
+  .kontak .conKontak .kontakKiri {
+    width: 100%;
+  }
+
+  .kontak .conKontak .kontakKanan {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
