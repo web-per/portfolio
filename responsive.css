@@ -68,6 +68,16 @@
     --text-3: 0.8rem;
   }
 
+  .banner .context h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+
+  .banner .context h2 {
+    margin-top: -5%;
+  }
+
   .context .bannerImg {
     width: 50%;
     margin-bottom: 10%;
@@ -228,7 +238,8 @@
   }
 
   .kontak .conKontak {
-    display: block; max-width: 350px;
+    display: block;
+    max-width: 350px;
   }
 
   .kontak .conKontak p {

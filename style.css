@@ -41,15 +41,17 @@ body {
 .context h1 {
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1%;
+    font-weight: 600;
 }
 
 .context h2 {
     text-align: center;
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 1%;
+    margin-top: -1.5%;
 }
 
 .context p {
@@ -245,6 +247,7 @@ body {
     gap: 40px;
     color: white;
     text-align: justify;
+    align-items: center;
 }
 
 .deskripsi {
