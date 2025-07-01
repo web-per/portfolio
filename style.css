@@ -278,7 +278,7 @@ body {
     width: 100%;
     background-color: #ccc;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-top: 5px;
     position: relative;
 }
@@ -286,7 +286,7 @@ body {
 .progress {
     background-color: red;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 2px;
     position: relative;
 }
 
