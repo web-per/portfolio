@@ -113,6 +113,10 @@
     max-width: 300px;
   }
 
+  .skill h1 {
+    font-size: var(--text-2);
+  }
+
   .skill-bars {
     max-width: 300px;
   }
@@ -219,6 +223,10 @@
     margin-top: 10%;
   }
 
+  .kontak h1 {
+    font-size: var(--text-2);
+  }
+
   .kontak .conKontak {
     display: block; max-width: 350px;
   }
@@ -234,5 +242,9 @@
   .kontak .conKontak .kontakKanan {
     width: 100%;
     margin-top: 5%;
+  }
+
+  iframe {
+    height: 300px;
   }
 }

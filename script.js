@@ -35,3 +35,14 @@ new Swiper(".wrapper", {
     },
   },
 });
+
+document.querySelectorAll('.wrapper img').forEach(image =>{
+  image.onclick = () =>{
+    document.querySelector('.popupImg').style.display = 'block';
+    document.querySelector('.popupImg img').src = image.getAttribute('src');
+  }
+});
+
+document.querySelector('.popupImg span').onclick = () =>{
+  document.querySelector('.popupImg').style.display = 'none';
+}
