@@ -430,6 +430,9 @@ body {
 /* CV */
 .cv {
     padding: 10% 0;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 95%; margin: auto;
 }
 
 .cv h1 {
@@ -548,6 +551,10 @@ body {
 }
 
 /* Kontak */
+.kontak {
+    margin-top: 5%;
+}
+
 .kontak h1 {
     color: white;
     font-size: var(--text-1);
