@@ -169,6 +169,10 @@
     width: 60%;
   }
 
+  .cvContent .kiri h1 {
+    text-align: center;
+}
+
   .cvContent p {
     font-size: var(--text-3);
   }
