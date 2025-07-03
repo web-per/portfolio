@@ -523,20 +523,7 @@ body {
 }
 
 .cv .skills {
-    display: flex;
     margin-bottom: 5%;
-}
-
-.cv .skillsKiri {
-    width: 50%;
-}
-
-.cv .skills h1 {
-    font-size: 1.3rem;
-}
-
-.cv .skillsKanan {
-    width: 50%;
 }
 
 .cv .pend {

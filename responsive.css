@@ -169,10 +169,6 @@
     width: 60%;
   }
 
-  .cvContent .kiri h1 {
-    text-align: center;
-  }
-
   .cvContent p {
     font-size: var(--text-3);
   }
@@ -206,24 +202,6 @@
 
   .cvContent .kanan .skills {
     margin-top: 5%;
-  }
-
-  .cvContent .kanan .skill .skills {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .cvContent .skillsKiri {
-    width: 60%;
-  }
-
-  .cvContent .skillsKanan {
-    width: 40%;
-  }
-
-  .cvContent .kanan .skills h1 {
-    font-size: 1rem;
-    text-align: left;
   }
 
   .cvContent .kanan .pendidikan {
