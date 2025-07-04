@@ -191,7 +191,6 @@
   }
 
   .cvContent .kanan .pengalaman h1 {
-    margin-bottom: 5%;
     font-size: 1.4rem;
   }
 
@@ -210,10 +209,6 @@
 
   .cvContent .kanan .pendidikan {
     margin-top: 10%;
-  }
-
-  .cvContent .kanan .pendidikan h1 {
-    margin-bottom: 5%;
   }
 
   .kontak {
