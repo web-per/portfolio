@@ -14,6 +14,10 @@ body {
 }
 
 /* Banner */
+#particles-js {
+    height: 100vh;
+}
+
 .context {
     width: 100%;
     position: absolute;
