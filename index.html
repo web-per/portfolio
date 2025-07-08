@@ -145,7 +145,7 @@
                         <!-- Single Card -->
                         <div class="card swiper-slide">
                             <div class="card-image">
-                                <img src="img/portfolio_3.png" alt="Productivity" />
+                                <img src="img/portfolio_3.jpg" onclick="openLightbox(this)" />
                                 <div class="card-tag">Toko ATK</div>
                             </div>
                             <div class="card-content">
@@ -164,7 +164,7 @@
                         <!-- Single Card -->
                         <div class="card swiper-slide">
                             <div class="card-image">
-                                <img src="img/portfolio_4.png" alt="Productivity" />
+                                <img src="img/portfolio_4.png" onclick="openLightbox(this)" />
                                 <div class="card-tag">Karang Taruna</div>
                             </div>
                             <div class="card-content">
@@ -183,7 +183,7 @@
                         <!-- Single Card -->
                         <div class="card swiper-slide">
                             <div class="card-image">
-                                <img src="img/portfolio_1.png" alt="Design Trends" />
+                                <img src="img/portfolio_1.png" onclick="openLightbox(this)" />
                                 <div class="card-tag">Coffe</div>
                             </div>
                             <div class="card-content">
@@ -199,7 +199,7 @@
                         <!-- Single Card -->
                         <div class="card swiper-slide">
                             <div class="card-image">
-                                <img src="img/portfolio_2.png" alt="Development" />
+                                <img src="img/portfolio_2.png" onclick="openLightbox(this)" />
                                 <div class="card-tag">Portfolio</div>
                             </div>
                             <div class="card-content">
@@ -218,6 +218,11 @@
                         </div>
                     </div>
 
+                    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                        <span class="close">&times;</span>
+                        <img id="lightbox-img" src="" alt="preview">
+                    </div>
+
                     <!-- Pagination -->
                     <div class="swiper-pagination"></div>
 
@@ -228,10 +233,7 @@
             </div>
         </div>
 
-        <div class="popupImg">
-            <span>&times;</span>
-            <img src="img/portfolio_3.png" alt="">
-        </div>
+
     </section>
 
     <!-- Curculum Vitue -->
