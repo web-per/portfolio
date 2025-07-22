@@ -78,7 +78,7 @@ body {
     font-weight: bold;
     margin-bottom: 3%;
     color: black;
-    font-family: 'castellar';
+    font-family: "Goldman", sans-serif;
 }
 
 .conProfil {
@@ -117,7 +117,7 @@ body {
     font-weight: bold;
     margin-bottom: 3%;
     color: black;
-    font-family: 'castellar';
+    font-family: "Goldman", sans-serif;
 }
 
 .content-keahlian {
@@ -193,7 +193,7 @@ body {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1%;
-    font-family: 'castellar';
+    font-family: "Goldman", sans-serif;
 }
 
 .wrapper {
@@ -328,7 +328,7 @@ body {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1%;
-    font-family: 'castellar';
+    font-family: "Goldman", sans-serif;
 }
 
 .cv .garis1 {
@@ -442,7 +442,7 @@ body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 3%;
-    font-family: 'castellar';
+    font-family: "Goldman", sans-serif;
 }
 
 .kontak .conKontak {
