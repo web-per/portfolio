@@ -144,7 +144,7 @@
   }
 
   .card .card-content .card-text {
-    font-size: 0.9rem;
+    font-size: var(--text-3);
   }
 
   .popupImg span {
