@@ -49,7 +49,7 @@
   .keahlian h1,
   .portfolio h1,
   .cv h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .profilTxt {
@@ -68,23 +68,14 @@
     --text-3: 0.8rem;
   }
 
-  .banner .context h1 {
-    font-size: 1rem;
+  .context h1 {
+    font-size: var(--text-2);
     font-weight: 600;
-    margin-bottom: 5%;
-  }
-
-  .banner .context h2 {
-    margin-top: -5%;
   }
 
   .context .bannerImg {
     width: 40%;
     margin-bottom: 10%;
-  }
-
-  .context h1 {
-    font-size: var(--text-2);
   }
 
   .context h2 {

@@ -49,7 +49,7 @@ body {
 .context h2 {
     text-align: center;
     color: #1167b1;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1%;
     background-color: white;
     font-family: "Goldman", sans-serif;
@@ -74,7 +74,7 @@ body {
 }
 
 .profil h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 3%;
     color: black;
@@ -113,7 +113,7 @@ body {
 
 .keahlian h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 3%;
     color: black;
@@ -191,7 +191,7 @@ body {
 .portfolio h1 {
     color: black;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1%;
     font-family: "Goldman", sans-serif;
 }
@@ -326,7 +326,7 @@ body {
 .cv h1 {
     color: #1167b1;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1%;
     font-family: "Goldman", sans-serif;
 }
@@ -439,7 +439,7 @@ body {
 
 .kontak h1 {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 3%;
     font-family: "Goldman", sans-serif;
