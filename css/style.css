@@ -885,6 +885,23 @@ body {
     transform: translateY(-5px);
 }
 
+/* ============================= */
+/* FIX CLICK MOBILE (HARUS DI BAWAH) */
+/* ============================= */
+
+.hero::before,
+.hero::after,
+.hero-image::after {
+    pointer-events: none;
+}
+
+.hero-text,
+.hero-buttons,
+.hero-buttons a {
+    position: relative;
+    z-index: 5;
+}
+
 @media (max-width: 1024px) {
 
     /* HERO */

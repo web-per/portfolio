@@ -321,7 +321,7 @@
                                 nugrahairfan220@gmail.com
                             </a></p>
                     </div>
-                    <a href="https://wa.me/628xxxxxxxxxx" class="contact-btn" target="_blank">
+                    <a href="https://wa.me/62882002125311" class="contact-btn" target="_blank">
                         Send WhatsApp
                     </a>
                 </div>
@@ -343,7 +343,7 @@
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-github"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/628xxxxxxxxxx" target="_blank">
+                    <a href="https://wa.me/62882002125311" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
@@ -359,96 +359,7 @@
         </div>
     </footer>
 
-    <!-- ============== -->
-    <!-- SCRIPT SECTION -->
-    <!-- ============== -->
-
-    <!-- Hamburger Menu -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', (e) => {
-            e.stopPropagation();
-            navMenu.classList.toggle('active');
-        });
-
-        navMenu.addEventListener('click', (e) => {
-            e.stopPropagation();
-        });
-
-        document.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-        });
-    </script>
-
-    <!-- Scroll Fade-Up Animation -->
-    <script>
-        const faders = document.querySelectorAll('.fade-up');
-
-        const appearOptions = {
-            threshold: 0.2
-        };
-
-        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-            entries.forEach((entry, index) => {
-                if (!entry.isIntersecting) return;
-
-                setTimeout(() => {
-                    entry.target.classList.add('show');
-                }, index * 150);
-
-                observer.unobserve(entry.target);
-            });
-        }, appearOptions);
-
-        faders.forEach(fader => {
-            appearOnScroll.observe(fader);
-        });
-    </script>
-
-    <!-- Projects Slider -->
-    <script>
-        const track = document.querySelector('.projects-track');
-        const nextBtn = document.querySelector('.next');
-        const prevBtn = document.querySelector('.prev');
-
-        const scrollAmount = track.querySelector('.project-card').offsetWidth + 30;
-
-        nextBtn.addEventListener('click', () => {
-            track.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        });
-
-        prevBtn.addEventListener('click', () => {
-            track.scrollBy({
-                left: -scrollAmount,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
-    <!-- Skills Progress Bar Animation -->
-    <script>
-        const skillSection = document.querySelector('.skills');
-        const progressBars = document.querySelectorAll('.skill-progress');
-
-        const skillObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    progressBars.forEach(bar => {
-                        bar.style.width = bar.getAttribute('data-width');
-                    });
-                }
-            });
-        }, {
-            threshold: 0.4
-        });
-
-        skillObserver.observe(skillSection);
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
