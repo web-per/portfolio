@@ -23,6 +23,15 @@ document.addEventListener('click', () => {
     document.body.classList.remove('no-scroll');
 });
 
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    });
+});
+
 overlay.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
