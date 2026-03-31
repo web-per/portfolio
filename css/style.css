@@ -1001,6 +1001,11 @@ body {
     }
 
     /* ABOUT */
+    .about-card {
+        border-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(225, 6, 0, 0.15);
+    }
+    
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -1113,6 +1118,21 @@ body {
     }
 
     /* SKILLS */
+
+    .skill-card.modern {
+        background: linear-gradient(145deg, #1a0a0a, #0f0f0f);
+        border-color: rgba(255, 0, 0, 0.5);
+    }
+
+    .skill-card.modern::after {
+        opacity: 1;
+    }
+
+    /* Progress bar langsung penuh */
+    .skill-progress {
+        width: attr(data-width);
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
