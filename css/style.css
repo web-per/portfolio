@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 .fade-up {
     opacity: 0;
     transform: translateY(40px);
@@ -95,8 +99,26 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: white;
-    transition: 0.3s;
+    background: #fff;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.hamburger.active span {
+    background: #e10600;
+    box-shadow: 0 0 10px #e10600, 0 0 20px #e10600;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Responsive */
@@ -104,24 +126,80 @@ body {
     .nav-menu {
         position: absolute;
         top: 55px;
-        right: -100%;
+        left: 0%;
         flex-direction: column;
-        background: #111;
-        width: 30%;
+        background: rgb(15, 15, 15);
+        backdrop-filter: blur(0px);
+        width: 100%;
         padding: 20px;
-        transition: 0.4s ease;
-        border-left: 2px solid #e10600;
-        border-bottom: 2px solid #e10600;
-        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.35s ease;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 12px;
+        border-radius: 8px;
+        transition: 0.2s;
+        position: relative;
+        overflow: hidden;
     }
 
     .nav-menu.active {
-        right: 0;
+        top: 57px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a:active {
+        background: rgba(225, 6, 0, 0.15);
+        color: #fff;
+        transform: translateX(8px);
+    }
+
+    .nav-menu a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 0%;
+        background: #e10600;
+        transition: 0.3s;
+    }
+
+    .nav-menu a:hover::before,
+    .nav-menu a:active::before {
+        height: 100%;
     }
 
     .hamburger {
         display: flex;
     }
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* gelap */
+    backdrop-filter: blur(5px);
+    /* blur */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 900;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* HERO SECTION */
@@ -953,6 +1031,10 @@ body {
     /* CONTACT */
     .contact-wrapper {
         flex-direction: column;
+    }
+
+    .contact-map {
+        display: none;
     }
 }
 

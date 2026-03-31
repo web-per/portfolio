@@ -1,10 +1,15 @@
 // Script for handling the hamburger menu toggle and closing it when clicking outside
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const overlay = document.querySelector('.overlay');
 
 hamburger.addEventListener('click', (e) => {
     e.stopPropagation();
+
+    hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
 });
 
 navMenu.addEventListener('click', (e) => {
@@ -12,7 +17,17 @@ navMenu.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', () => {
+    hamburger.classList.remove('active');
     navMenu.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+});
+
+overlay.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
 });
 
 // Script for handling the fade-up animation on scroll using Intersection Observer API
