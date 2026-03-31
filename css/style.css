@@ -135,6 +135,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
         transition: all 0.35s ease;
+        pointer-events: none;
     }
 
     .nav-menu a {
@@ -150,6 +151,7 @@ body {
         top: 57px;
         opacity: 1;
         transform: translateY(0);
+        pointer-events: auto;
     }
 
     .nav-menu a::after {
@@ -1012,9 +1014,9 @@ body {
     /* ABOUT */
     .about-card {
         border-color: rgba(255, 0, 0, 0.5);
-    box-shadow: 0 15px 30px rgba(225, 6, 0, 0.15);
+        box-shadow: 0 15px 30px rgba(225, 6, 0, 0.15);
     }
-    
+
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -1204,11 +1206,4 @@ body {
         height: 35px;
         font-size: 14px;
     }
-}
-
-.btn-primary,
-.btn-outline,
-.project-btn {
-    position: relative;
-    z-index: 10;
 }
