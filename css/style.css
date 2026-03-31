@@ -202,6 +202,14 @@ body {
     visibility: visible;
 }
 
+.overlay {
+    pointer-events: none;
+}
+
+.overlay.active {
+    pointer-events: auto;
+}
+
 /* HERO SECTION */
 .hero {
     min-height: 100vh;
@@ -611,6 +619,7 @@ body {
     inset: 0;
     opacity: 0;
     transition: 0.4s;
+    pointer-events: none;
 }
 
 .project-card:hover .project-image::after {
@@ -1130,7 +1139,7 @@ body {
 
     /* Progress bar langsung penuh */
     .skill-progress {
-        width: attr(data-width);
+        width: 100%;
     }
 
     .skills-grid {
@@ -1195,4 +1204,11 @@ body {
         height: 35px;
         font-size: 14px;
     }
+}
+
+.btn-primary,
+.btn-outline,
+.project-btn {
+    position: relative;
+    z-index: 10;
 }
